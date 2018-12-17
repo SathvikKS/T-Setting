@@ -1,2 +1,2 @@
 # T-Setting
-visit https://skamaker.com/76J8 for more details
+visit https://sathvikks.tk/customize-termux-no-root/ for more details
