@@ -1,0 +1,114 @@
+clear
+cd $HOME/T-Setting
+#### UPdater
+clear
+touch updat
+rm updat*
+git checkout origin/master *
+cd $HOME/T-Load
+echo "Searching for updates. Please wait :)"
+mkdir -p $HOME/.sksupdate
+touch $HOME/.sksupdate/updates
+rm $HOME/.sksupdate/updates
+git fetch --dry-run 2>&1 > /dev/null| tee $HOME/.sksupdate/updates
+up=$HOME/.sksupdate/updates
+if grep -q origin/master "$up"; then
+clear
+echo "Updates are found. Now updating"
+sleep 1
+update=$(git fetch --all
+git reset --hard origin/master
+git pull)
+clear
+chmod +x *
+echo "Update done. Please reopen"
+sleep 1
+exit
+else
+chmod +x *
+echo "No updates"
+sleep 2
+fi
+########Updater end
+clear
+$HOME/T-Setting/./version
+cp $HOME/T-Setting/bashrc $HOME/.bashrc
+echo "-----------------------------------------------------------"
+echo "                Script by Sathvik K S"
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "         Remodifying and selling is prohibited "
+echo "You should take my (Sathvik K S) permission before doing so"
+echo "-----------------------------------------------------------"
+echo "1. Colour"
+echo "2. Password"
+echo "3. Login Message"
+echo "4. Remove all customization done by this script"
+echo "5. Update or Redownload "
+echo "6. Backup & Restore"
+echo "7. Exit"
+read -p ">|" set
+if [ $set = "1" ]
+then
+$HOME/T-Setting/./colour
+elif [ $set = "2" ]
+then
+$HOME/T-Setting/./password
+elif [ $set = "3" ]
+then
+$HOME/T-Setting/./motd
+elif [ $set = "4" ]
+then
+[[ -s $HOME/.pstore ]]
+rmp=$(echo $?)
+if [ $rmp = "1" ]
+then
+echo "You need to set password first"
+sleep 3
+setting
+fi
+clear
+echo "Enter password"
+read -s -p ">|" rmp
+source $HOME/.pstore
+if [ $password = $rmp ]
+then
+cd
+rm .pwdd
+rm .pstore
+rm .clr
+touch .pwdd
+touch .pstore
+touch .clr
+rm $PREFIX/etc/motd
+cp $HOME/T-Setting/motd-original $PREFIX/etc/motd
+clear
+echo "All settings have been reverted to original configurations"
+sleep 5
+clear
+setting
+else
+echo
+clear
+echo "Wrong password I Cannot revert back"
+sleep 3
+clear
+setting
+fi
+elif [ $set = 5 ]
+then
+$HOME/T-Setting/./redownload
+elif [ $set = "6" ]
+then
+$HOME/T-Setting/backup
+elif [ $set = "7" ]
+then
+clear
+echo "See you soon"
+sleep 3
+clear
+exit
+else
+echo "Wrong choice"
+sleep 3
+setting
+fi

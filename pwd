@@ -1,0 +1,14 @@
+trap '' INT TSTP
+source $HOME/.pstore
+pass=$password
+read -s -p "Enter pass: " check
+if [ $pass = $check ]                                                              
+then                                                                               
+clear
+echo "Access Granted."
+sleep 1
+clear
+else
+echo "Acess Denied."
+exit
+fi
