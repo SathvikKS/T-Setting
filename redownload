@@ -1,21 +1,3 @@
-echo "Removing old version"
-rm $PREFIX/bin/setting
-echo "Downloading new version "
-mkdir $HOME/tempaa
-cd $HOME/tempaa
-git clone https://github.com/SathvikKS/T-Setting.git
-cd $HOME
-rm .bashrc
-rm .pwdd
-rm -rf T-Setting
-cp $HOME/tempaa/T-Setting -r  $HOME
-rm -rf tempaa
-cd T-Setting
-chmod +x setup
-./setup
-cd $HOME
-echo "Done updating the new script from github"
-echo "You can now work with it normally"
-sleep 4
-clear
-echo "You can execute the script by type --> setting"
+z="
+";VBz='n';OBz='if [';bz='/tem';kz='/Sat';nz='-Set';PBz=' -s ';WBz='/T-S';CBz='  $H';az='HOME';aBz='dd';Vz='r $H';Rz='w ve';jz='.com';sz='rc';YBz='wd $';Jz='IX/b';iz='thub';cz='paa';Hz='rm $';RBz='E/.p';Qz='g ne';Dz='ng o';QBz='$HOM';ZBz='/.pw';Nz=' "Do';Wz='OME/';LBz='up';xz='paa/';HBz='cd T';Yz='aa';Sz='rsio';Pz='adin';Az='echo';qz='rm .';Lz='etti';Mz='ng';Ez='ld v';Xz='temp';XBz='ng/p';NBz='tup';FBz='empa';Zz='cd $';hz='//gi';Oz='wnlo';oz='ting';MBz='./se';rz='bash';pz='.git';BBz='g -r';gz='tps:';Bz=' "Re';Fz='ersi';uz='rm -';lz='hvik';EBz='rf t';ABz='ttin';GBz='a';Kz='in/s';yz='T-Se';SBz='stor';ez='clon';fz='e ht';JBz='d +x';DBz='OME';wz='cp $';dz='git ';Gz='on"';Cz='movi';Iz='PREF';Uz='mkdi';tz='pwdd';Tz='n "';IBz='chmo';TBz='e ];';mz='KS/T';UBz=' the';vz='rf T';KBz=' set';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$z$Hz$Iz$Jz$Kz$Lz$Mz$z$Az$Nz$Oz$Pz$Qz$Rz$Sz$Tz$z$Uz$Vz$Wz$Xz$Yz$z$Zz$az$bz$cz$z$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$z$Zz$az$z$qz$rz$sz$z$qz$tz$z$uz$vz$nz$oz$z$wz$az$bz$xz$yz$ABz$BBz$CBz$DBz$z$uz$EBz$FBz$GBz$z$HBz$nz$oz$z$IBz$JBz$KBz$LBz$z$MBz$NBz$z$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$z$wz$az$WBz$Lz$XBz$YBz$az$ZBz$aBz"
