@@ -1,3 +1,23 @@
-z="
-";Vz='chmo';kz=' set';SBz='ecut';Rz='e';cz='nano';sz='our';bBz='--> ';OBz='echo';GBz='m.te';ez='node';fz='js -';Yz='apt-';NBz='rm /';aBz='ing ';Wz='d +x';DBz='data';dz=' -y';Dz='etti';wz=' bac';hz='pkg ';FBz='a/co';RBz='n ex';Bz='HOME';az='inst';IBz='/fil';xz='kup';CBz='nk /';LBz='in/s';MBz='ng';JBz='es/u';cBz='sett';uz=' ver';Hz='OME/';mz='ownl';Uz='ting';Az='cp $';Zz='get ';Jz='hrc';Pz='lr';vz='sion';lz=' red';eBz='slee';bz='all ';Oz='h .c';Fz='ashr';EBz='/dat';Sz='cd T';UBz='is s';Tz='-Set';pz='swor';Mz='h .p';Iz='.bas';ZBz=' typ';jz='p';tz=' mot';rz=' col';Xz=' *';Ez='ng/b';QBz='u ca';TBz='e th';XBz='ytim';Lz='touc';Cz='/T-S';Nz='wdd';ABz='r';fBz='p 4';PBz=' "Yo';iz='p7zi';VBz='crip';Gz='c $H';HBz='rmux';nz='oad';BBz='unli';qz='d';gz='y';WBz='t an';dBz='ing"';Qz='stor';Kz='cd';oz=' pas';KBz='sr/b';yz='clea';YBz='e by';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$z$Kz$z$Lz$Mz$Nz$z$Lz$Oz$Pz$z$Lz$Mz$Qz$Rz$z$Sz$Tz$Uz$z$Vz$Wz$Xz$z$Yz$Zz$az$bz$cz$dz$z$Yz$Zz$az$bz$ez$fz$gz$z$hz$az$bz$iz$jz$z$Vz$Wz$kz$Uz$z$Vz$Wz$lz$mz$nz$z$Vz$Wz$oz$pz$qz$z$Vz$Wz$rz$sz$z$Vz$Wz$tz$qz$z$Vz$Wz$uz$vz$z$Vz$Wz$wz$xz$z$yz$ABz$z$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$Dz$MBz$z$NBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$Dz$MBz$z$yz$ABz$z$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$z$eBz$fBz"
+cp $HOME/T-Setting/bashrc $HOME/.bashrc
+cd
+touch .pwdd
+touch .clr
+touch .pstore
+cd T-Setting
+chmod +x *
+apt-get install nano -y
+apt-get install nodejs -y
+pkg install p7zip
+chmod +x setting
+chmod +x redownload
+chmod +x password
+chmod +x colour
+chmod +x motd
+chmod +x version
+chmod +x backup
+clear
+unlink /data/data/com.termux/files/usr/bin/setting
+rm /data/data/com.termux/files/usr/bin/setting
+clear
+echo "You can execute this script anytime by typing --> setting"
+sleep 4
